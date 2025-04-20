@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>童熊熊破天荒首次科遊-石門水庫一日遊 | 童綜合醫院員工旅遊</title>
+    <meta name="description" content="童熊熊破天荒首次科遊-石門水庫一日遊行程，包含時間表、景點介紹、美食推薦和交通資訊">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: "#4F9DA8",
+                            DEFAULT: "#2D7D8A",
+                            dark: "#1A5D6B"
+                        },
+                        secondary: {
+                            light: "#FFD166",
+                            DEFAULT: "#FFB347",
+                            dark: "#FF9500"
+                        },
+                        bear: {
+                            light: "#FFB6C1",
+                            DEFAULT: "#FF8C94",
+                            dark: "#FF6B74"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-section {
+            background: url('images/drvisit.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .food-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            width: 2px;
+            height: 20px;
+            background-color: #2D7D8A;
+        }
+        .bear-title {
+            background: linear-gradient(to right, #FF8C94, #FFB347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- 導覽列 -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-primary">
+                        <i class="fas fa-paw mr-2 text-bear"></i>童熊熊科遊
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-800 hover:text-primary transition">景點介紹</a>
+                    <a href="#schedule" class="text-gray-800 hover:text-primary transition">行程時間表</a>
+                    <a href="#food" class="text-gray-800 hover:text-primary transition">美食推薦</a>
+                    <a href="#notice" class="text-gray-800 hover:text-primary transition">注意事項</a>
+                    <a href="#contact" class="text-gray-800 hover:text-primary transition">聯絡窗口</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- 移動端菜單 -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition">景點介紹</a>
+                    <a href="#schedule" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition">行程時間表</a>
+                    <a href="#food" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition">美食推薦</a>
+                    <a href="#notice" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition">注意事項</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition">聯絡窗口</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄區塊 -->
+    <section class="hero-section h-screen flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 bear-title">童熊熊破天荒首次科遊</h1>
+            <h2 class="text-3xl md:text-5xl mb-8">石門水庫一日遊</h2>
+            <a href="#schedule" class="bg-bear hover:bg-bear-dark text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+                查看行程 <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 景點介紹 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-primary">景點介紹</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="order-1">
+                    <img src="images/shihmen-dan.jpg" alt="石門水庫薑母島風光" class="rounded-lg shadow-xl w-full" loading="lazy">
+                </div>
+                <div class="order-2">
+                    <h3 class="text-2xl font-bold mb-4 text-primary">石門水庫-薑母島</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        薑母島是石門水庫中的一個美麗小島，因偶像劇《命中注定我愛你》在此取景而聞名。島上風景秀麗，有傳統的漁村風光，可以欣賞湖光山色，體驗悠閒的島嶼生活。
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        我們將搭乘遊艇前往薑母島，沿途欣賞石門水庫的壯麗景色，並在島上進行約2小時的探索活動，感受不一樣的水庫風情。
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-primary-light text-white px-3 py-1 rounded-full text-sm">偶像劇景點</span>
+                        <span class="bg-primary-light text-white px-3 py-1 rounded-full text-sm">遊艇體驗</span>
+                        <span class="bg-primary-light text-white px-3 py-1 rounded-full text-sm">自然風光</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-4 text-primary">手信霧隱城</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        手信霧隱城是以日本江戶時代為主題的觀光工廠，園區內有許多日式建築和造景，彷彿穿越時空來到古代日本。這裡不僅可以了解傳統糕點的製作過程，還能體驗和服拍照、DIY活動等。
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        特別安排導覽解說，讓您深入了解日本文化與糕點製作工藝，並有充足時間選購特色伴手禮。
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-primary-light text-white px-3 py-1 rounded-full text-sm">日本風情</span>
+                        <span class="bg-primary-light text-white px-3 py-1 rounded-full text-sm">DIY體驗</span>
+                        <span class="bg-primary-light text-white px-3 py-1 rounded-full text-sm">伴手禮</span>
+                    </div>
+                    <div class="mt-3">
+                        <a href="https://www.sswyc.com.tw/zh-TW" target="_blank" class="text-primary hover:text-primary-dark transition">
+                            <i class="fas fa-globe mr-1"></i> 官方網站
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="images/Wuing.jpg" alt="手信霧隱城" class="rounded-lg shadow-xl w-full" loading="lazy">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-1">
+                    <img src="images/shinlang.jpg" alt="心蘭活魚餐廳" class="rounded-lg shadow-xl w-full" loading="lazy">
+                </div>
+                <div class="order-2">
+                    <h3 class="text-2xl font-bold mb-4 text-primary">心蘭活魚餐廳</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        心蘭活魚餐廳是石門水庫周邊知名活魚餐廳，提供多種活魚料理方式，招牌菜有砂鍋魚頭、糖醋魚片等。餐廳特色包括新鮮活魚現撈現煮，提供多達20種以上的活魚料理方式，環境寬敞可容納團體用餐。
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        特別安排在此停留，讓您品嚐最新鮮的活魚料理，體驗在地特色美食。
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-primary-light text-white px-3 py-1 rounded-full text-sm">活魚料理</span>
+                        <span class="bg-primary-light text-white px-3 py-1 rounded-full text-sm">團體用餐</span>
+                        <span class="bg-primary-light text-white px-3 py-1 rounded-full text-sm">在地美食</span>
+                    </div>
+                    <div class="mt-3">
+                        <a href="https://www.facebook.com/p/%E5%BF%83%E8%98%AD%E6%B4%BB%E9%AD%9A%E9%A4%90%E5%BB%B3-100063696200498/" target="_blank" class="text-primary hover:text-primary-dark transition">
+                            <i class="fab fa-facebook mr-1"></i> Facebook粉絲專頁
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行程時間表 -->
+    <section id="schedule" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-primary">行程時間表</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="relative">
+                    <!-- 時間軸 -->
+                    <div class="timeline-item relative pb-12">
+                        <div class="flex items-start">
+                            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bear text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
+                                <span class="font-bold text-sm">7:20</span>
+                            </div>
+                            <div class="hidden md:block md:w-5/12 px-4 py-2"></div>
+                            <div class="w-full md:w-5/12 px-4 py-2">
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <h3 class="text-xl font-bold mb-2 text-primary">集合出發</h3>
+                                    <p class="text-gray-700">於童綜合醫院東南門集合，7:30準時出發</p>
+                                    <div class="mt-2 text-sm text-gray-500">
+                                        <i class="fas fa-map-marker-alt mr-1"></i> 集合地點：童醫院東南門
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item relative pb-12">
+                        <div class="flex items-start">
+                            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bear text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
+                                <span class="font-bold text-sm">10:00</span>
+                            </div>
+                            <div class="w-full md:w-5/12 px-4 py-2">
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <h3 class="text-xl font-bold mb-2 text-primary">石門水庫-薑母島</h3>
+                                    <p class="text-gray-700">搭乘遊艇前往薑母島，欣賞水庫風光</p>
+                                    <div class="mt-2 text-sm text-gray-500">
+                                        <i class="fas fa-clock mr-1"></i> 活動時間：10:00-12:00
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden md:block md:w-5/12 px-4 py-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item relative pb-12">
+                        <div class="flex items-start">
+                            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bear text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
+                                <span class="font-bold text-sm">12:20</span>
+                            </div>
+                            <div class="hidden md:block md:w-5/12 px-4 py-2"></div>
+                            <div class="w-full md:w-5/12 px-4 py-2">
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <h3 class="text-xl font-bold mb-2 text-primary">午餐時間</h3>
+                                    <p class="text-gray-700">心蘭活魚餐廳享用美味午餐</p>
+                                    <div class="mt-2 text-sm text-gray-500">
+                                        <i class="fas fa-clock mr-1"></i> 用餐時間：12:20-13:50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item relative pb-12">
+                        <div class="flex items-start">
+                            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bear text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
+                                <span class="font-bold text-sm">14:30</span>
+                            </div>
+                            <div class="w-full md:w-5/12 px-4 py-2">
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <h3 class="text-xl font-bold mb-2 text-primary">手信霧隱城</h3>
+                                    <p class="text-gray-700">日本江戶風情觀光工廠，體驗和服與DIY活動</p>
+                                    <div class="mt-2 text-sm text-gray-500">
+                                        <i class="fas fa-clock mr-1"></i> 活動時間：14:30-15:30
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden md:block md:w-5/12 px-4 py-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item relative pb-12">
+                        <div class="flex items-start">
+                            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bear text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
+                                <span class="font-bold text-sm">16:30</span>
+                            </div>
+                            <div class="hidden md:block md:w-5/12 px-4 py-2"></div>
+                            <div class="w-full md:w-5/12 px-4 py-2">
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <h3 class="text-xl font-bold mb-2 text-primary">裕芳食品</h3>
+                                    <p class="text-gray-700">選購伴手禮，結束愉快旅程</p>
+                                    <div class="mt-2 text-sm text-gray-500">
+                                        <i class="fas fa-clock mr-1"></i> 停留時間：16:30-17:00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item relative">
+                        <div class="flex items-start">
+                            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bear text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
+                                <span class="font-bold text-sm">18:00</span>
+                            </div>
+                            <div class="w-full md:w-5/12 px-4 py-2">
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <h3 class="text-xl font-bold mb-2 text-primary">返回醫院</h3>
+                                    <p class="text-gray-700">預定18:00返抵童綜合醫院</p>
+                                </div>
+                            </div>
+                            <div class="hidden md:block md:w-5/12 px-4 py-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 美食推薦 -->
+    <section id="food" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-primary">美食推薦</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 美食卡片 1 -->
+                <div class="food-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="images/shinlang.jpg" alt="心蘭活魚餐廳" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">心蘭活魚餐廳</h3>
+                        <p class="text-gray-700 mb-4">心蘭活魚餐廳是石門水庫周邊知名活魚餐廳，提供多種活魚料理方式，招牌菜有砂鍋魚頭、糖醋魚片等。</p>
+                        <p class="text-gray-700 mb-4">餐廳特色：</p>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li>新鮮活魚現撈現煮，保證新鮮</li>
+                            <li>提供多達20種以上的活魚料理方式</li>
+                            <li>招牌菜：砂鍋魚頭、糖醋魚片、清蒸活魚</li>
+                            <li>環境寬敞，可容納團體用餐</li>
+                            <li>提供免費停車場</li>
+                        </ul>
+                        <div class="flex items-center text-secondary">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>石門水庫周邊</span>
+                        </div>
+                        <div class="mt-3 text-sm text-gray-500">
+                            <i class="fas fa-utensils mr-1"></i> 午餐用餐地點
+                        </div>
+                        <div class="mt-3">
+                            <a href="https://www.facebook.com/p/%E5%BF%83%E8%98%AD%E6%B4%BB%E9%AD%9A%E9%A4%90%E5%BB%B3-100063696200498/" target="_blank" class="text-primary hover:text-primary-dark transition">
+                                <i class="fab fa-facebook mr-1"></i> Facebook粉絲專頁
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 美食卡片 2 -->
+                <div class="food-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="images/Wuing.jpg" alt="手信霧隱城和菓子" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">手信霧隱城和菓子</h3>
+                        <p class="text-gray-700 mb-4">日式傳統糕點，造型精緻，口味多樣，是送禮自用兩相宜的伴手禮。</p>
+                        <div class="flex items-center text-secondary">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>手信霧隱城</span>
+                        </div>
+                        <div class="mt-3">
+                            <a href="https://www.sswyc.com.tw/zh-TW" target="_blank" class="text-primary hover:text-primary-dark transition">
+                                <i class="fas fa-globe mr-1"></i> 官方網站
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 美食卡片 3 -->
+                <div class="food-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="images/Yufang.jpg" alt="裕芳食品" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">裕芳食品</h3>
+                        <p class="text-gray-700 mb-4">裕芳食品是大甲知名的伴手禮專賣店，以傳統糕點、肉乾、堅果等產品聞名。這裡提供多樣化的試吃服務，讓您能品嚐後再選購最喜歡的產品。</p>
+                        <p class="text-gray-700 mb-4">裕芳食品自民國七十五年成立，秉持「品質第一，服務至上」經營理念，產品以「健康、美味、營養」為主要訴求，深獲消費者肯定及好評。</p>
+                        <div class="flex items-center text-secondary">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>大甲區</span>
+                        </div>
+                        <div class="mt-3">
+                            <a href="https://www.yufang.com.tw/?srsltid=AfmBOopuExC2ijIXN2FNy5AcxISuI5tFYoMeq8SyozUDPHGq-lk0DnNY" target="_blank" class="text-primary hover:text-primary-dark transition">
+                                <i class="fas fa-globe mr-1"></i> 官方網站
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 注意事項 -->
+    <section id="notice" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-primary">注意事項</h2>
+            
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <div class="bg-bear text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fas fa-exclamation text-xs"></i>
+                        </div>
+                        <span>請準時於7:20前抵達童綜合醫院東南門集合，逾時不候</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-bear text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fas fa-exclamation text-xs"></i>
+                        </div>
+                        <span>請攜帶身分證、健保卡等證件以備不時之需</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-bear text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fas fa-exclamation text-xs"></i>
+                        </div>
+                        <span>建議穿著輕便服裝與舒適鞋子，並視天氣攜帶雨具或防曬用品</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-bear text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fas fa-exclamation text-xs"></i>
+                        </div>
+                        <span>薑母島遊艇活動請注意安全，聽從導遊指示</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-bear text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fas fa-exclamation text-xs"></i>
+                        </div>
+                        <span>請自備個人藥品、暈車藥等必需品</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-bear text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fas fa-exclamation text-xs"></i>
+                        </div>
+                        <span>行程順序可能視當日交通狀況調整，敬請配合</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡窗口 -->
+    <section id="contact" class="py-20 bg-primary text-white parallax" style="background-image: linear-gradient(rgba(45, 125, 138, 0.9), rgba(45, 125, 138, 0.9)), url('https://picsum.photos/1920/1080?random=107')">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">聯絡窗口</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white bg-opacity-20 rounded-lg p-8 backdrop-blur-sm">
+                    <h3 class="text-2xl font-bold mb-6">童綜合醫院員工旅遊組</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <div class="flex items-start mb-6">
+                                <i class="fas fa-user mt-1 mr-3 text-bear"></i>
+                                <div>
+                                    <h4 class="font-bold">活動負責人</h4>
+                                    <p>邱芸貞 技術主任 (分機: 74455)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start mb-6">
+                                <i class="fas fa-phone-alt mt-1 mr-3 text-bear"></i>
+                                <div>
+                                    <h4 class="font-bold">聯絡電話</h4>
+                                    <p>04-26581919 轉 胸腔科旅遊組</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex items-start mb-6">
+                                <i class="fas fa-envelope mt-1 mr-3 text-bear"></i>
+                                <div>
+                                    <h4 class="font-bold">電子郵件</h4>
+                                    <p>t7343@ms3.sltung.com.tw</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock mt-1 mr-3 text-bear"></i>
+                                <div>
+                                    <h4 class="font-bold">服務時間</h4>
+                                    <p>週一至週五 08:30-17:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-xl font-bold mb-4">緊急聯絡</h4>
+                        <div class="bg-white bg-opacity-30 rounded-lg p-4">
+                            <p class="mb-2">活動當日緊急聯絡人：林鈺貞 0910-656649</p>
+                            <p>請於活動前將聯絡人電話存入手機以備不時之需</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold flex items-center">
+                        <i class="fas fa-paw mr-2 text-bear"></i>
+                        <span>童熊熊科遊</span>
+                    </a>
+                    <p class="mt-2 text-gray-400">童綜合醫院員工旅遊活動</p>
+                </div>
+                <div class="flex flex-wrap justify-center space-x-6">
+                    <a href="#about" class="hover:text-primary-light transition">景點介紹</a>
+                    <a href="#schedule" class="hover:text-primary-light transition">行程時間表</a>
+                    <a href="#food" class="hover:text-primary-light transition">美食推薦</a>
+                    <a href="#notice" class="hover:text-primary-light transition">注意事項</a>
+                    <a href="#contact" class="hover:text-primary-light transition">聯絡窗口</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 童綜合醫院員工旅遊組. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 導覽列滾動效果
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.classList.add('bg-opacity-90');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.remove('bg-opacity-90');
+            }
+        });
+
+        // 平滑滾動
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // 點擊後關閉移動端菜單
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu.classList.contains('block')) {
+                    mobileMenu.classList.remove('block');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // 移動端菜單切換
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+        });
+    </script>
+</body>
+</html>
