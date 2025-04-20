@@ -88,9 +88,19 @@
                     <a href="#notice" class="text-gray-800 hover:text-primary transition">注意事項</a>
                     <a href="#contact" class="text-gray-800 hover:text-primary transition">聯絡窗口</a>
                 </div>
-                <button class="md:hidden focus:outline-none">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
+            </div>
+            <!-- 移動端菜單 -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition">景點介紹</a>
+                    <a href="#schedule" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition">行程時間表</a>
+                    <a href="#food" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition">美食推薦</a>
+                    <a href="#notice" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition">注意事項</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition">聯絡窗口</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -525,7 +535,23 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+                
+                // 點擊後關閉移動端菜單
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu.classList.contains('block')) {
+                    mobileMenu.classList.remove('block');
+                    mobileMenu.classList.add('hidden');
+                }
             });
+        });
+        
+        // 移動端菜單切換
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
         });
     </script>
 </body>
